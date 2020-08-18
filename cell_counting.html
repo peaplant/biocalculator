@@ -16,46 +16,50 @@
       DarkMode(this)">
   -->
   <header class="ib">
-  <h1 class="ib">Biology Calculator&ensp;&nbsp;</h1>
+  <h1 class="ib">Biology Calculator&ensp;&nbsp;&nbsp;</h1>
   </header>
 
   <div class="blueborder ib">
+    <div class="flex_container">
     <h3 style="margin-left: 0.5vw; ">Timer 1</h3>
-    <button onclick="timer1_reset()" id="button_reset1" style="height: 2vw; width: 4vw; margin-left: 0.45vw; font-size: 1vw; margin-right :0.5vw;" class=inputclass_timer>Reset</button>
-      <br>
+    <button onclick="timer1_reset()" id="button_reset1" style="height: 2vw; width: 5vw; margin-left: 0.45vw; font-size: 1vw; margin-right :0.5vw; position: relative; left:3vw;" class=inputclass_timer>Reset</button>
+  </div>
+  <div class="flex_container">
       <input id="timer1_h" style="margin-left: 0.5vw; " class="inputclass_timer" placeholder="Hour">
       <input id="timer1_m" class="inputclass_timer" placeholder="Min.">
       <input id="timer1_s" style="margin-right: 0.5vw; "class="inputclass_timer" placeholder="Sec.">
-      <br>
+  </div>
       <div class="flex_container">
       <button onclick="stopwatch_1()" id="button_timer1" style="height: 2.5vw; width: 6.5vw; margin-left: 0.45vw; margin-right :0.5vw;" class="inputclass_timer">Start</button>
       <textarea id="result_timer1" style="width : 8vw; font-size: 1.6vw;"class="inputclass_timer" placeholder="hh:mm:ss" readonly></textarea>
   </div>
-</div>
-<div class="blueborder ib">
+</div><div class="blueborder ib">
+  <div class="flex_container">
   <h3 style="margin-left: 0.5vw; ">Timer 2</h3>
-  <button onclick="timer2_reset" id="button_reset2" style="height: 2vw; width: 4vw; margin-left: 0.45vw; font-size: 1vw; margin-right :0.5vw;" class=inputclass_timer>Reset</button>
-    <br>
+  <button onclick="timer2_reset" id="button_reset2" style="height: 2vw; width: 5vw; margin-left: 0.45vw; font-size: 1vw; margin-right :0.5vw; position: relative; left:3vw;" class=inputclass_timer>Reset</button>
+</div>
+  <div class="flex_container">
     <input id="timer2_h" style="margin-left: 0.5vw; " class="inputclass_timer" placeholder="Hour">
     <input id="timer2_m" class="inputclass_timer" placeholder="Min.">
     <input id="timer2_s" style="margin-right: 0.5vw; "class="inputclass_timer" placeholder="Sec.">
-    <br>
+  </div>
     <div class="flex_container">
     <button onclick="stopwatch_2()" id="button_timer2" style="height: 2.5vw; width: 6.5vw; margin-left: 0.45vw; margin-right :0.5vw;" class="inputclass_timer">Start</button>
     <textarea id="result_timer2" style="width : 8vw; font-size: 1.6vw;"class="inputclass_timer" placeholder="hh:mm:ss"></textarea>
 </div>
 </div>
+<p style="text-align: right; margin: 0vw; position:relative; right:7vw; font-size: 1.5vw;"> *Please allow pop-ups to get the timer alarm </p>
 <nav>
   <div class="grid">
-    <a href="SCI_calculator_mole.html">
+    <a href="mole.html">
       <div class="shape blue1" id="touch">Mole</div></a>
-    <a href="SCI_calculator_seeding.html">
+    <a href="seeding.html">
       <div class="shape blue2" id="touch">Seeding</div></a>
-    <a href="SCI_calculator_cell_stock.html">
+    <a href="cell_stock.html">
       <div class="shape blue3" id="touch">Cell Stock</div></a>
-      <a href="SCI_calculator_cell_counting.html">
+      <a href="cell_counting.html">
         <div style="background: #F1948A; font-size: 2.7vw; padding-top: 1vw;" class="shape" id="touch" >Cell Counting</div></a>
-    <a href="SCI_calculator_DNA.html">
+    <a href="DNA.html">
       <div class="shape blue4" id="touch">DNA Tm</div></a>
 
   </div>
@@ -66,30 +70,26 @@
       <div class="position1">
       <h2 id="t"> Cell counting calculator for hemocytometer </h2>
       <div class="flex_container">
-        <div class="ib">
+        <div>
           <h3> Square1 </h3>
-          <br>
           <input id="count_square1" class="inputclass_small" placeholder="Square1">
         </div>
-        <div class="ib">
+        <div>
           <h3> Square2 </h3>
-          <br>
+
           <input id="count_square2" class="inputclass_small" placeholder="Square2">
         </div>
-        <div class="ib">
+        <div>
           <h3> Square3 </h3>
-          <br>
           <input id="count_square3" class="inputclass_small" placeholder="Square3">
         </div>
-        <div class="ib">
+        <div>
           <h3> Square4 </h3>
-          <br>
           <input id="count_square4" class="inputclass_small" placeholder="Square4">
         </div>
       </div>
         <div class="ib">
           <h3> Dilution Factor </h3>
-          <br>
           <input id="count_dilution" class="inputclass_medium" placeholder="Dilution Factor">
         </div>
         <div class="ib">
@@ -105,7 +105,7 @@
     </article>
     <footer>
       <div class="position1">
-      <p><br><br>Feedback & ad request : baneling200@gmail.com <br><br>
+      <p><br><br>Feedback & ad request : baneling200@gmail.com <br>
          Copyright ⓒ 2020. Go. All Rights Reserved. </p>
        </div>
     </footer>

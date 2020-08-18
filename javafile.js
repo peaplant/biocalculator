@@ -183,7 +183,7 @@ function time_set1s() {
 function timer1s() {
   if (time_1s < 1) {
     clearInterval(settime_1s);
-    window.open("SCI_calculator_timer1.html","Timer 1 is finished","width=500 , height=300");
+    window.open("timer1.html","Timer 1 is finished","width=500 , height=300");
     document.getElementById("button_timer1").innerText = "Start";
   } else if (document.getElementById("button_timer1").innerText == "Restart.") {
     clearInterval(settime_1s);
@@ -224,7 +224,7 @@ function time_set1() {
 function timer1() {
   if (time_1 < 1) {
     clearInterval(settime_1);
-    window.open("SCI_calculator_timer1.html","Timer 1 is finished","width=500 , height=300");
+    window.open("timer1.html","Timer 1 is finished","width=500 , height=300");
     document.getElementById("button_timer1").innerText = "Start";
   } else if (document.getElementById("button_timer1").innerText == "Restart") {
     clearInterval(settime_1);
@@ -282,7 +282,7 @@ function time_set2s() {
 function timer2s() {
   if (time_2s < 1) {
     clearInterval(settime_2s);
-    window.open("SCI_calculator_timer2.html","Timer 2 is finished","width=500 , height=300");
+    window.open("timer2.html","Timer 2 is finished","width=500 , height=300");
     document.getElementById("button_timer2").innerText = "Start";
   } else if (document.getElementById("button_timer2").innerText == "Restart.") {
     clearInterval(settime_2s);
@@ -323,7 +323,7 @@ function time_set2() {
 function timer2() {
   if (time_2 < 1) {
     clearInterval(settime_2);
-    window.open("SCI_calculator_timer2.html","Timer 2 is finished","width=500 , height=300");
+    window.open("timer2.html","Timer 2 is finished","width=500 , height=300");
     document.getElementById("button_timer2").innerText = "Start";
   } else if (document.getElementById("button_timer2").innerText == "Restart") {
     clearInterval(settime_2);
@@ -373,7 +373,13 @@ function time_over_2() {
     timeover_2.textContent = time_o_2r;
   }}
 
-
+//제이쿼리 DNA
+  $(document).ready(function () {
+    $("#dna_input").keyup(function() {
+        $(this).val($(this).val().toUpperCase().replace(/[^ACGT \r\s&%'(]/g, ""))
+        $("#dna_length").val((($(this).val()).replace(/(\s*)/g, "").length));
+      })
+    })
 
 
 

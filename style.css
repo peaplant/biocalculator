@@ -57,7 +57,7 @@ a:hover {
   color: powderblue;
 }
 .backcolor {
-  height: 100vw;
+  height: auto;
   position: relative;
   top: -3vw;
   /*border-top: 0.5vw solid gray;*/
@@ -126,7 +126,7 @@ a:hover {
 h1 {
   font-size: 5vw;
   font-family: arial, sans-serif;
-  margin-bottom: 2vw;
+  margin-bottom: 0vw;
   margin-top: 2vw;
 }
 h2 {
@@ -138,6 +138,12 @@ h3 {
   font-family: arial, sans-serif;
   margin: 0vw;
   margin-left: 1vw;
+  display: block;
+}
+h4 {
+  font-size: 1.8vw;
+  font-family: arial, sans-serif;
+  margin: 0vw;
   display: inline-block;
 }
 body {
@@ -233,7 +239,7 @@ p {
   border-color: #5DADE2;
   border-radius: 1vw;
   border-width: 0.25vw;
-  margin-bottom: 0.3vw;
+  margin-bottom: 0.1vw;
   margin-top:  0vw;
   margin-left: 0vw;
   margin-right: 0vw;
@@ -248,4 +254,10 @@ p {
   border-radius: 1vw;
   border-width: 0.25vw;
 
+}
+
+.flex_direction{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
