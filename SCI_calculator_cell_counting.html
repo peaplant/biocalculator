@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Biology calculator</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="jquery-3.5.1.min.js"></script>
+  <script src="javafile.js"></script>
+
+</head>
+
+<body>
+<script src="javafile.js"></script>
+  <!-- !!dark mode code!!
+    <input type="button" value="Dark" onclick="
+      DarkMode(this)">
+  -->
+  <header class="ib">
+  <h1 class="ib">Biology Calculator&ensp;&nbsp;</h1>
+  </header>
+
+  <div class="blueborder ib">
+    <h3 style="margin-left: 0.5vw; ">Timer 1</h3>
+    <button onclick="timer1_reset()" id="button_reset1" style="height: 2vw; width: 4vw; margin-left: 0.45vw; font-size: 1vw; margin-right :0.5vw;" class=inputclass_timer>Reset</button>
+      <br>
+      <input id="timer1_h" style="margin-left: 0.5vw; " class="inputclass_timer" placeholder="Hour">
+      <input id="timer1_m" class="inputclass_timer" placeholder="Min.">
+      <input id="timer1_s" style="margin-right: 0.5vw; "class="inputclass_timer" placeholder="Sec.">
+      <br>
+      <div class="flex_container">
+      <button onclick="stopwatch_1()" id="button_timer1" style="height: 2.5vw; width: 6.5vw; margin-left: 0.45vw; margin-right :0.5vw;" class="inputclass_timer">Start</button>
+      <textarea id="result_timer1" style="width : 8vw; font-size: 1.6vw;"class="inputclass_timer" placeholder="hh:mm:ss" readonly></textarea>
+  </div>
+</div>
+<div class="blueborder ib">
+  <h3 style="margin-left: 0.5vw; ">Timer 2</h3>
+  <button onclick="timer2_reset" id="button_reset2" style="height: 2vw; width: 4vw; margin-left: 0.45vw; font-size: 1vw; margin-right :0.5vw;" class=inputclass_timer>Reset</button>
+    <br>
+    <input id="timer2_h" style="margin-left: 0.5vw; " class="inputclass_timer" placeholder="Hour">
+    <input id="timer2_m" class="inputclass_timer" placeholder="Min.">
+    <input id="timer2_s" style="margin-right: 0.5vw; "class="inputclass_timer" placeholder="Sec.">
+    <br>
+    <div class="flex_container">
+    <button onclick="stopwatch_2()" id="button_timer2" style="height: 2.5vw; width: 6.5vw; margin-left: 0.45vw; margin-right :0.5vw;" class="inputclass_timer">Start</button>
+    <textarea id="result_timer2" style="width : 8vw; font-size: 1.6vw;"class="inputclass_timer" placeholder="hh:mm:ss"></textarea>
+</div>
+</div>
+<nav>
+  <div class="grid">
+    <a href="SCI_calculator_mole.html">
+      <div class="shape blue1" id="touch">Mole</div></a>
+    <a href="SCI_calculator_seeding.html">
+      <div class="shape blue2" id="touch">Seeding</div></a>
+    <a href="SCI_calculator_cell_stock.html">
+      <div class="shape blue3" id="touch">Cell Stock</div></a>
+      <a href="SCI_calculator_cell_counting.html">
+        <div style="background: #F1948A; font-size: 2.7vw; padding-top: 1vw;" class="shape" id="touch" >Cell Counting</div></a>
+    <a href="SCI_calculator_DNA.html">
+      <div class="shape blue4" id="touch">DNA Tm</div></a>
+
+  </div>
+  </nav>
+
+  <div class="backcolor" style="background:#FADBD8">
+    <article>
+      <div class="position1">
+      <h2 id="t"> Cell counting calculator for hemocytometer </h2>
+      <div class="flex_container">
+        <div class="ib">
+          <h3> Square1 </h3>
+          <br>
+          <input id="count_square1" class="inputclass_small" placeholder="Square1">
+        </div>
+        <div class="ib">
+          <h3> Square2 </h3>
+          <br>
+          <input id="count_square2" class="inputclass_small" placeholder="Square2">
+        </div>
+        <div class="ib">
+          <h3> Square3 </h3>
+          <br>
+          <input id="count_square3" class="inputclass_small" placeholder="Square3">
+        </div>
+        <div class="ib">
+          <h3> Square4 </h3>
+          <br>
+          <input id="count_square4" class="inputclass_small" placeholder="Square4">
+        </div>
+      </div>
+        <div class="ib">
+          <h3> Dilution Factor </h3>
+          <br>
+          <input id="count_dilution" class="inputclass_medium" placeholder="Dilution Factor">
+        </div>
+        <div class="ib">
+          <h4> X<h4>
+        </div>
+        <div class="flex_container">
+          <button onclick="count()" class="button inputclass">Calculate</button>
+          <textarea id="count_result" class="result_left inputclass" placeholder="Cell density" readonly></textarea>
+        </div>
+      </div>
+      <textarea id="hidden_1" hidden style="width: 1px; height: 1px"></textarea>
+      <textarea id="hidden_2" hidden style="width: 1px; height: 1px"></textarea>
+    </article>
+    <footer>
+      <div class="position1">
+      <p><br><br>Feedback & ad request : baneling200@gmail.com <br><br>
+         Copyright ⓒ 2020. Go. All Rights Reserved. </p>
+       </div>
+    </footer>
+  </div>
+
+</body>
+</html>
