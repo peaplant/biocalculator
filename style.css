@@ -261,3 +261,9 @@ p {
   flex-direction: column;
   flex-wrap: wrap;
 }
+.disqus{
+  margin-top: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 0%;
+}
