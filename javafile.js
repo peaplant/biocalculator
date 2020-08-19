@@ -376,7 +376,7 @@ function time_over_2() {
 //제이쿼리 DNA
   $(document).ready(function () {
     $("#dna_input").keyup(function() {
-        $(this).val($(this).val().toUpperCase().replace(/[^ACGT \r\s&%'(]/g, ""))
+        $(this).val($(this).val().toUpperCase().replace(/[^ACGTU \r\s&%'(]/g, ""))
         $("#dna_length").val((($(this).val()).replace(/(\s*)/g, "").length));
       })
     })
