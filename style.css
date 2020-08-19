@@ -59,9 +59,10 @@ a:hover {
 .backcolor {
   height: auto;
   position: relative;
-  top: -3vw;
+  top: -7.2vw;
   /*border-top: 0.5vw solid gray;*/
 }
+
 .left {
   float: left;
 }
@@ -147,9 +148,10 @@ h4 {
   display: inline-block;
 }
 body {
+  position: relative;
+  left : 6%;
   margin-top: 3%;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-right: 10%;
   margin-bottom: 5%;
 }
 
@@ -262,8 +264,37 @@ p {
   flex-wrap: wrap;
 }
 .disqus{
-  margin-top: 2%;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-top: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
   margin-bottom: 0%;
+}
+.qa{
+  background: #71E3B0;
+  display: inline-block;
+  border-top-left-radius: 2.5vw;
+  border-top-right-radius: 2.5vw;
+  text-align: center;
+  font-size: 2.5vw;
+  cursor: pointer;
+  padding-top: 0.4vw;
+  padding-bottom: 0vw;
+}
+.comments{
+  background: #B68AF0;
+  display: inline-block;
+  border-top-left-radius: 2.5vw;
+  border-top-right-radius: 2.5vw;
+  text-align: center;
+  font-size: 2.5vw;
+  cursor: pointer;
+  padding-top: 0.4vw;
+  padding-bottom: 0vw;
+}
+.sidenav{
+  position:relative;
+  top : 16.9vw;
+  right : 21vw;
+  display: inline-block;
+  transform: rotate(270deg);
 }
