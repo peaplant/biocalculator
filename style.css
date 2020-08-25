@@ -24,29 +24,78 @@
   padding-bottom: 1.3vw;
 }
 .blue1 {
-  background: #81DAF5
+  background: #81DAF5;
 }
 .blue2 {
-  background: #b3ffb3
+  background: #C0DF5C;
 }
 .blue3 {
-  background: #ffcc99
+  background: #ffcc99;
 }
 .blue4 {
-  background: #ffccff
+  background: #ffccff;
+}
+.blue5{
+  background: #F1948A;
 }
 
 .back1 {
-  background: /*#BDE1E1*/ #A9E2F3
+  /*#BDE1E1*/ /* old ver. #A9E2F3 */
+  border-style: solid;
+  border-color: #81DAF5;
+  border-width: 0.7vw;
+  border-top-left-radius: 0vw;
+  border-top-right-radius: 0vw;
+  border-bottom-left-radius: 3vw;
+  border-bottom-left-radius: 3vw;
 }
 .back2 {
-  background : #ccffcc
+  /* old ver. background : #ccffcc*/
+  border-style: solid;
+  border-color: #C0DF5C;
+  border-width: 0.7vw;
+  border-top-left-radius: 0vw;
+  border-top-right-radius: 0vw;
+  border-bottom-left-radius: 3vw;
+  border-bottom-left-radius: 3vw;
 }
 .back3 {
-  background : #ffe5cc
+  /* old ver. background : #ffe5cc*/
+  border-style: solid;
+  border-color: #ffcc99;
+  border-width: 0.7vw;
+  border-top-left-radius: 0vw;
+  border-top-right-radius: 0vw;
+  border-bottom-left-radius: 3vw;
+  border-bottom-left-radius: 3vw;
 }
 .back4 {
-  background : #fbeffb
+  /* old ver. background : #fbeffb*/
+  border-style: solid;
+  border-color: #ffccff;
+  border-width: 0.7vw;
+  border-top-left-radius: 0vw;
+  border-top-right-radius: 0vw;
+  border-bottom-left-radius: 3vw;
+  border-bottom-left-radius: 3vw;
+}
+.back5{
+  border-style: solid;
+  border-color: #F1948A;
+  border-width: 0.7vw;
+  border-top-left-radius: 0vw;
+  border-top-right-radius: 0vw;
+  border-bottom-left-radius: 3vw;
+  border-bottom-left-radius: 3vw;
+}
+.back6{
+  border-style: solid;
+  border-color: #B68AF0;
+  border-width: 0.7vw;
+  border-top-left-radius: 0vw;
+  border-top-right-radius: 0vw;
+  border-bottom-left-radius: 3vw;
+  border-bottom-left-radius: 3vw;
 }
 /*a태그 호버링*/
 a {
@@ -59,7 +108,8 @@ a:hover {
 .backcolor {
   height: auto;
   position: relative;
-  top: -7.2vw;
+  top: -4.7vw;
+  background: #E1EFD4;
   /*border-top: 0.5vw solid gray;*/
 }
 
@@ -255,6 +305,7 @@ p {
   border-color: #5DADE2;
   border-radius: 1vw;
   border-width: 0.25vw;
+  margin-left: 0.4vw;
 
 }
 
@@ -293,8 +344,13 @@ p {
 }
 .sidenav{
   position:relative;
-  top : 16.9vw;
-  right : 21vw;
+  /* if comments is inserted = top : 16.9vw; right : 21vw; */
+  top : 7vw;
+  right :10.5vw;
   display: inline-block;
   transform: rotate(270deg);
+}
+footer {
+  position: relative;
+  top: 2vw;
 }

@@ -184,6 +184,7 @@ function timer1s() {
   if (time_1s < 1) {
     clearInterval(settime_1s);
     window.open("timer1.html","Timer 1 is finished","width=500 , height=300");
+    timer1_result2();
     document.getElementById("button_timer1").innerText = "Start";
   } else if (document.getElementById("button_timer1").innerText == "Restart.") {
     clearInterval(settime_1s);
@@ -373,6 +374,8 @@ function time_over_2() {
     timeover_2.textContent = time_o_2r;
   }}
 
+
+
 //제이쿼리 DNA
   $(document).ready(function () {
     $("#dna_input").keyup(function() {
@@ -440,4 +443,25 @@ function timer2() {
           $("#dna_length").text("[ " + (blankReplaceAll($(this).val()).length) + " ]");
         })
       })
+*/
+
+// 타이머 1 제이쿼리
+/* function time_over_1_2() {
+  var time_o_1 = setInterval(time_o_1s_2,1000);
+  var time_o_1r = 0
+  function time_o_1s_2() {
+    time_o_1r = time_o_1r + 1;
+    timeover_1_2.textContent = time_o_1r;
+  }}
+*/
+/*  //제이쿼리 다이얼로그
+  function timer1_result2()
+  {
+  	$('#dialog-message').dialog({
+  		modal: true,
+  		buttons: {
+  			"Close": function() { $(this).dialog('close'); },
+  		}
+  	});
+  }
 */
