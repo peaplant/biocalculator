@@ -225,7 +225,7 @@ function time_set1() {
 function timer1() {
   if (time_1 < 1) {
     clearInterval(settime_1);
-    window.open("timer1.html","Timer 1 is finished","width=500 , height=300");
+    alert('Timer is finished\nIt stopped at\n' + new Date());
     document.getElementById("button_timer1").innerText = "Start";
   } else if (document.getElementById("button_timer1").innerText == "Restart") {
     clearInterval(settime_1);
@@ -255,6 +255,100 @@ function timer1_reset() {
 
 }}
 
+
+//제이쿼리 DNA
+  $(document).ready(function () {
+    $("#dna_input").keyup(function() {
+        $(this).val($(this).val().toUpperCase().replace(/[^ACGT \r\s&%'(]/g, ""))
+        $("#dna_length").val((($(this).val()).replace(/(\s*)/g, "").length));
+      })
+    })
+
+
+
+//코드의 무덤
+
+
+
+/* 구버전 timer 2 함수
+function time_set2() {
+  var settime_2 = setInterval(timer2,1000);
+  var h_t2 = document.getElementById("timer2_h").value;
+  var m_t2 = document.getElementById("timer2_m").value;
+  var s_t2 = document.getElementById("timer2_s").value;
+  if (h_t2 === "") {
+    var h_value2 = 0;
+  } else {
+    h_value2 = h_t2*3600;
+  }
+  if (m_t2 === "") {
+    var m_value2 = 0;
+  } else {
+    m_value2 = m_t2*60;
+  }
+  if (s_t2 === "") {
+    var s_value2 = 0;
+  } else {
+    s_value2 = s_t2;
+  }
+  var time_2 = (parseInt(h_value2) + parseInt(m_value2) + parseInt(s_value2));
+
+function timer2() {
+
+  if (time_2 < 1) {
+    clearInterval(settime_2);
+    alert("Timer 2 is finished !!!");
+  } else {
+    time_2 = time_2 - 1;
+    var rh_t2 = Math.floor(parseInt(time_2)/3600);
+    var rm_t2 = Math.floor((parseInt(time_2) % 3600)/60);
+    var rs_t2 = Math.floor((parseInt(time_2) % 3600)%60);
+    result_timer2.textContent = twolength(rh_t2) + ":" + twolength(rm_t2) + ":" + twolength(rs_t2);
+
+  }
+}
+  function timer2_reset() {
+    clearInterval(settime_2);
+
+  }
+}
+*/
+
+
+
+/* Tm value 함수 원본
+  $(document).ready(function () {
+      $("#dna_input").keyup(function() {
+          $(this).val($(this).val().toUpperCase().replace(/[^ACGTRWSDBNYMKHVI \r\s&%'(]/g, ""));
+          $("#dna_length").text("[ " + (blankReplaceAll($(this).val()).length) + " ]");
+        })
+      })
+*/
+
+// 타이머 1 제이쿼리
+/* function time_over_1_2() {
+  var time_o_1 = setInterval(time_o_1s_2,1000);
+  var time_o_1r = 0
+  function time_o_1s_2() {
+    time_o_1r = time_o_1r + 1;
+    timeover_1_2.textContent = time_o_1r;
+  }}
+*/
+/*  //제이쿼리 다이얼로그
+  function timer1_result2()
+  {
+  	$('#dialog-message').dialog({
+  		modal: true,
+  		buttons: {
+  			"Close": function() { $(this).dialog('close'); },
+  		}
+  	});
+  }
+*/
+
+
+// 타이머 2 함수 (팝업알람 뜨는 타이머 함수)
+/*
 // timer 2 함수
 
 function stopwatch_2() {
@@ -354,8 +448,9 @@ function timer2_reset() {
 
 }}
 
+*/
 
-
+/* 타이머 팝업
 // 타이머1 팝업
 function time_over_1() {
   var time_o_1 = setInterval(time_o_1s,1000);
@@ -374,94 +469,4 @@ function time_over_2() {
     timeover_2.textContent = time_o_2r;
   }}
 
-
-
-//제이쿼리 DNA
-  $(document).ready(function () {
-    $("#dna_input").keyup(function() {
-        $(this).val($(this).val().toUpperCase().replace(/[^ACGT \r\s&%'(]/g, ""))
-        $("#dna_length").val((($(this).val()).replace(/(\s*)/g, "").length));
-      })
-    })
-
-
-
-//코드의 무덤
-
-
-
-/* 구버전 timer 2 함수
-function time_set2() {
-  var settime_2 = setInterval(timer2,1000);
-  var h_t2 = document.getElementById("timer2_h").value;
-  var m_t2 = document.getElementById("timer2_m").value;
-  var s_t2 = document.getElementById("timer2_s").value;
-  if (h_t2 === "") {
-    var h_value2 = 0;
-  } else {
-    h_value2 = h_t2*3600;
-  }
-  if (m_t2 === "") {
-    var m_value2 = 0;
-  } else {
-    m_value2 = m_t2*60;
-  }
-  if (s_t2 === "") {
-    var s_value2 = 0;
-  } else {
-    s_value2 = s_t2;
-  }
-  var time_2 = (parseInt(h_value2) + parseInt(m_value2) + parseInt(s_value2));
-
-function timer2() {
-
-  if (time_2 < 1) {
-    clearInterval(settime_2);
-    alert("Timer 2 is finished !!!");
-  } else {
-    time_2 = time_2 - 1;
-    var rh_t2 = Math.floor(parseInt(time_2)/3600);
-    var rm_t2 = Math.floor((parseInt(time_2) % 3600)/60);
-    var rs_t2 = Math.floor((parseInt(time_2) % 3600)%60);
-    result_timer2.textContent = twolength(rh_t2) + ":" + twolength(rm_t2) + ":" + twolength(rs_t2);
-
-  }
-}
-  function timer2_reset() {
-    clearInterval(settime_2);
-
-  }
-}
-*/
-
-
-
-/* Tm value 함수 원본
-  $(document).ready(function () {
-      $("#dna_input").keyup(function() {
-          $(this).val($(this).val().toUpperCase().replace(/[^ACGTRWSDBNYMKHVI \r\s&%'(]/g, ""));
-          $("#dna_length").text("[ " + (blankReplaceAll($(this).val()).length) + " ]");
-        })
-      })
-*/
-
-// 타이머 1 제이쿼리
-/* function time_over_1_2() {
-  var time_o_1 = setInterval(time_o_1s_2,1000);
-  var time_o_1r = 0
-  function time_o_1s_2() {
-    time_o_1r = time_o_1r + 1;
-    timeover_1_2.textContent = time_o_1r;
-  }}
-*/
-/*  //제이쿼리 다이얼로그
-  function timer1_result2()
-  {
-  	$('#dialog-message').dialog({
-  		modal: true,
-  		buttons: {
-  			"Close": function() { $(this).dialog('close'); },
-  		}
-  	});
-  }
 */
