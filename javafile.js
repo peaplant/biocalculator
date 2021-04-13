@@ -36,13 +36,13 @@ function MtoG() {
   var mtog_r = document.getElementById("mtog_result");
   var mtog_formula = (mtog_v*mtog_l*mtog_c)/(mol_con*mol_vol);
   if(mtog_formula <0.001) {
-  mtog_r.textContent = "Volume of cell stock : " + mtog_formula*1000000 + "ng";
+  mtog_r.textContent = "weight of chemical : " + mtog_formula*1000000 + "µg";
  } else if(mtog_formula <1)  {
-  mtog_r.textContent = "Volume of cell stock : " + mtog_formula*1000 + "µg";
+  mtog_r.textContent = "weight of chemical : " + mtog_formula*1000 + "mg";
 } else if(mtog_formula >=1000) {
-  mtog_r.textContent = "Volume of cell stock : " + mtog_formula/1000 + "kg";
+  mtog_r.textContent = "weight of chemical : " + mtog_formula/1000 + "kg";
 }else {
-  mtog_r.textContent = "Volume of cell stock : " + mtog_formula + "g";
+  mtog_r.textContent = "weight of chemical : " + mtog_formula + "g";
 }
   }
 //스탁 희석
